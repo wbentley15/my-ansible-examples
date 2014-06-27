@@ -1,0 +1,16 @@
+---
+# This playbook deploys a simple standalone MySQL server. 
+
+- hosts: mysql-servers 
+  user: root
+  remote_user: root
+  sudo: yes
+  roles:
+    - mysql-standalone
+
+- hosts: mysql-consumers
+  user: root
+  remote_user: root
+  sudo: yes
+  roles:
+    - mysql-python

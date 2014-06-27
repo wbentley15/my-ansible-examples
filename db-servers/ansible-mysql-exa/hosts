@@ -1,0 +1,5 @@
+[mysql-servers]
+dbserver1
+
+[mysql-consumers]
+app1
